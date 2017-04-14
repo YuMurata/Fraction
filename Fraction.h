@@ -2,6 +2,9 @@
 
 #include<string>
 
+//分数クラス
+//denom = 分母
+//numer = 分子
 class Fraction
 {
 private:
@@ -15,13 +18,13 @@ public:
 
 	~Fraction() {}
 
-	Fraction Reciprocal()const;
+	Fraction Reciprocal()const;//逆数
 
-	double Value()const;
+	double Value()const;//実数値
 
-	std::string Improper()const;
+	std::string Improper()const;//仮分数表示
 	
-	std::string Band()const;
+	std::string Band()const;//帯分数表示
 
 	Fraction& operator=(const Fraction &x);
 
