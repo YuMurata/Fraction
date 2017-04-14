@@ -17,17 +17,17 @@ GitProp¨Template¨MyLib‚Ì‡‚ÉŒp³
 
 GitHub    
 „µMyLib  
-„«	„µinclude  
-„«	„µlib  
-„«	„µ...  
-„«	„¯MathPlus  
+„«  „µinclude  
+„«  „µlib  
+„«  „µ...  
+„«  „¯MathPlus  
 „«  
 „µGitProp  
-„«	„¯GitProp.props  
+„«  „¯GitProp.props  
 „«  
 „¯PropertySheet  
-	„µGitProp  
-	„µMyLib  
-	„¯Template  
+    „µGitProp  
+    „µMyLib  
+    „¯Template  
 
 
