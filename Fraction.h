@@ -22,9 +22,13 @@ public:
 
 	double Value()const;//実数値
 
+#ifdef _UNICODE
 	std::string Improper()const;//仮分数表示
-	
 	std::string Band()const;//帯分数表示
+#else
+	std::wstring Improper()const;//仮分数表示
+	std::wstring Band()const;//帯分数表示
+#endif
 
 	Fraction& operator=(const Fraction &x);
 
