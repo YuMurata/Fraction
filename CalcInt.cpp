@@ -1,21 +1,21 @@
 #include"Fraction.h"
 
-Fraction Fraction::operator+(const int & x)
+Fraction Fraction::operator+(const int & x)const
 {
 	return this->operator+(Fraction(x));
 }
 
-Fraction Fraction::operator-(const int & x)
+Fraction Fraction::operator-(const int & x)const
 {
 	return this->operator-(Fraction(x));
 }
 
-Fraction Fraction::operator*(const int & x)
+Fraction Fraction::operator*(const int & x)const
 {
 	return this->operator*(Fraction(x));
 }
 
-Fraction Fraction::operator/(const int & x)
+Fraction Fraction::operator/(const int & x)const
 {
 	return this->operator/(Fraction(x));
 }

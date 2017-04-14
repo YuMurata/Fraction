@@ -1,25 +1,8 @@
 #include"Fraction.h"
+#include<MathPlus.h>
+using namespace MathPlus;
 
-using namespace std;
-
-int LCM(int x, int y) {
-	x = abs(x);
-	y = abs(y);
-	if (x > y)
-	{
-		swap(x, y);
-	}
-
-	int i = x;
-	while (i % y != 0)
-	{
-		i += x;
-	}
-
-	return i;
-}
-
-Fraction Fraction::operator+(const Fraction & x)
+Fraction Fraction::operator+(const Fraction & x)const
 {
 	auto denom = LCM(this->denom, x.denom);
 	auto numer = this->numer*(denom / this->denom) + x.numer*(denom / x.denom);
@@ -28,13 +11,13 @@ Fraction Fraction::operator+(const Fraction & x)
 	return ret;
 }
 
-Fraction Fraction::operator-(const Fraction & x)
+Fraction Fraction::operator-(const Fraction & x)const
 {
 	auto ret = *this + Fraction(-x.numer, x.denom);
 	return ret;
 }
 
-Fraction Fraction::operator*(const Fraction & x)
+Fraction Fraction::operator*(const Fraction & x)const
 {
 	Fraction left(x.numer, this->denom);
 	Fraction right(this->numer, x.denom);
@@ -43,7 +26,7 @@ Fraction Fraction::operator*(const Fraction & x)
 	return ret;
 }
 
-Fraction Fraction::operator/(const Fraction & x)
+Fraction Fraction::operator/(const Fraction & x)const
 {
 	auto ret = *this * this->Reciprocal();
 	return ret;

@@ -9,12 +9,9 @@ using namespace std;
 
 int main()
 {
-	Fraction a(1, 2);
-
-	a = 1;
-	auto c = a + 1;
-
-	cout << a << endl;
+	Fraction a(1,2);
+	Fraction b(3, 2);
+	cout << a+b<< endl;
 
     return 0;
 }
